@@ -63,6 +63,38 @@ public class State
 		}
 	}
 	
+	public double getHispanicTurnout()
+	{
+		return hispanicTurnout;
+	}
+	
+	public void setHispanicTurnout(double newHisp)
+	{
+		hispanicTurnout = newHisp;
+	}
+	
+	public void setHispanicDem(double newHispDem)
+	{
+		hispanicDem = newHispDem;
+	}
+	
+	public void setHispanicGrowth(double newHispGrowth)
+	{
+		hispanicGrowth = newHispGrowth;
+	}
+	
+	public void setWhiteGrowth(double newWhiteGrowth)
+	{
+		whiteGrowth = newWhiteGrowth;
+	}
+	
+	public void swapWhiteHispGrowth()
+	{
+		double temp = whiteGrowth;
+		whiteGrowth = hispanicGrowth;
+		hispanicGrowth = temp;
+	}
+	
 	public String getName()
 	{
 		return name;
